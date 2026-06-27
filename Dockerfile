@@ -1,5 +1,7 @@
 FROM alpine:3.24
 
+LABEL org.opencontainers.image.source="https://github.com/reanimus/dante-docker-ci"
+
 # DANTE_VERSION is supplied by CI (the detected current version, identical
 # across arches). For a local build, pass it explicitly, e.g.:
 #   docker build --build-arg DANTE_VERSION="$(apk policy ...)" .
